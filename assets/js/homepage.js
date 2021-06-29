@@ -64,6 +64,9 @@ for (var i = 0; i < repos.length; i++) {
     var titleEl = document.createElement("span");
     titleEl.textContent = repoName;
   
+    // append to container
+    repoEl.appendChild(titleEl);
+    
     // create a status element
     var statusEl = document.createElement("span");
     statusEl.classList = "flex-row align-center";
@@ -77,8 +80,6 @@ for (var i = 0; i < repos.length; i++) {
 }
     // append to container
     repoEl.appendChild(statusEl);
-    // append to container
-    repoEl.appendChild(titleEl);
   
     // append container to the dom
     repoContainerEl.appendChild(repoEl);
